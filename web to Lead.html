@@ -10,58 +10,57 @@
     <!--  NOTE: Please add the following <FORM> element to your page.             -->
     <!--  ----------------------------------------------------------------------  -->
     <style>
-    .form-container {
-        margin: 50px auto;
-        width: 50%;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-        font-family: Arial, sans-serif;
-      }
-      h1 {
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
-        font-size: 36px;
-        color:black;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-      }
-      
-      form {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      label {
-        margin-top: 10px;
-        font-weight: bold;
-      }
-      
-      input[type="text"],
-      input[type="email"] {
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 16px;
-      }
-      
-      button[type="submit"] {
-        padding: 10px;
-        border-radius: 5px;
-        background-color: #4CAF50;
-        color: #fff;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      }
-      
-      button[type="submit"]:hover {
-        background-color: #3e8e41;
-      }
-    </style>
+		/* Add some basic styling */
+		body {
+			font-family: Arial, sans-serif;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: repeat;
+			background-attachment: fixed;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			font-size: 36px;
+			color:black;
+			text-transform: uppercase;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: rgba(255, 255, 255, 0.8);
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+		}
+		input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: none;
+			border-radius: 5px;
+			box-sizing: border-box;
+			background-color: rgba(255, 255, 255, 0.5);
+			box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+			transition: box-shadow 0.2s ease-in-out;
+		}
+		input[type="text"]:focus {
+			box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
     
     
     <!--  ----------------------------------------------------------------------  -->
