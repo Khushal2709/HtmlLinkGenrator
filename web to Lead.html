@@ -1,0 +1,99 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: Please add the following <FORM> element to your page.             -->
+    <!--  ----------------------------------------------------------------------  -->
+    <style>
+    .form-container {
+        margin: 50px auto;
+        width: 50%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        font-size: 36px;
+        color:black;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      label {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      
+      input[type="text"],
+      input[type="email"] {
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      
+      button[type="submit"] {
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: #fff;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+    
+    
+    <!--  ----------------------------------------------------------------------  -->
+    <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+    <!--  these lines if you wish to test in debug mode.                          -->
+    <!--  <input type="hidden" name="debug" value=1>                              -->
+    <!--  <input type="hidden" name="debugEmail" value="dk2640231@gmail.com">     -->
+    <!--  ----------------------------------------------------------------------  -->
+    <body>
+      <header>
+        <h1>Create Lead Form</h1>
+      </header>
+    </body>
+    <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    
+        <input type=hidden name="oid" value="00D5i00000CHcnt">
+        <input type=hidden name="retURL" value="http://google.com">
+    
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
+        
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" maxlength="10" required>
+        
+        <button type="submit">Submit</button>
+      </form>
